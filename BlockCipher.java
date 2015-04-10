@@ -1,5 +1,3 @@
-package Programming_project_SPECK_v1;
-
 
 
 public interface BlockCipher
