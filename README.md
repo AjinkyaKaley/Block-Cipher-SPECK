@@ -33,9 +33,9 @@ Encrypt single message:
 
 java Encrypt <Key> <PlainText>
 
-<key> is the key (16 hexadecimal digits, no spaces).
+key - is the key (16 hexadecimal digits, no spaces).
 
-<plaintext> is the plaintext block (8 hexadecimal digits, no spaces).
+plaintext - is the plaintext block (8 hexadecimal digits, no spaces).
 
 The output of this program will be Ciphertext of 8 Hexadecimal digits.If the input requirements are not meet, then error message will be displayed
 
@@ -43,13 +43,14 @@ Encrypt file:
 
 java EncryptFile <key> <ptfile> <ctfile>
 
-<key> is the key (16 hexadecimal digits, no spaces).
+key -is the key (16 hexadecimal digits, no spaces).
 
-<ptfile> is the name of the input file containing the plaintext message bytes.
+ptfile - is the name of the input file containing the plaintext message bytes.
 
-<ctfile> is the name of the output file containing the ciphertext message bytes.
+ctfile - is the name of the output file containing the ciphertext message bytes.
 
 The output file must contain only the ciphertext message bytes produced by encrypting the plaintext message bytes in the given input file, using the SPECK32/64 block cipher algorithm with the given key. The program does not print anything on std output.
+
 
 
 DECRYPTION
