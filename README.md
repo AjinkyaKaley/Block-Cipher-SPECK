@@ -31,7 +31,7 @@ ENCRYPTION:
 
 Encrypt single message:
 
-java Encrypt <Key> <PlainText>
+java Encrypt Key PlainText
 
 key - is the key (16 hexadecimal digits, no spaces).
 
@@ -41,7 +41,7 @@ The output of this program will be Ciphertext of 8 Hexadecimal digits.If the inp
 
 Encrypt file:
 
-java EncryptFile <key> <ptfile> <ctfile>
+java EncryptFile key ptfile ctfile
 
 key -is the key (16 hexadecimal digits, no spaces).
 
@@ -57,23 +57,23 @@ DECRYPTION
 
 Decryt single message:
 
-java Decrypt <key> <ciphertext>
+java Decrypt key ciphertext
 
-<key> is the key (16 hexadecimal digits, no spaces).
+key is the key (16 hexadecimal digits, no spaces).
 
-<ciphertext> is the ciphertext block (8 hexadecimal digits, no spaces).
+ciphertext is the ciphertext block (8 hexadecimal digits, no spaces).
 
 The output of this program will be Plaintext message of 8 hex digits.
 
 Decrypt file:
 
-java DecryptFile <key> <ctfile> <ptfile>
+java DecryptFile key ctfile ptfile
 
-<key> is the key (16 hexadecimal digits, no spaces).
+key is the key (16 hexadecimal digits, no spaces).
 
-<ctfile> is the name of the input file containing the ciphertext message bytes.
+ctfile is the name of the input file containing the ciphertext message bytes.
 
-<ptfile> is the name of the output file containing the plaintext message bytes.
+ptfile is the name of the output file containing the plaintext message bytes.
 
 THe output file must contain only the plaintext message bytes produced by decrypting the ciphertext message bytes in the given input file, using the SPECK32/64 block cipher algorithm with the given key. The program does not print anything on std output
 
